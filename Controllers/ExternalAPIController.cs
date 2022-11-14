@@ -7,10 +7,6 @@ namespace JoEdAngular2.Controllers;
 [Route("[controller]")]
 public class ExternalAPIController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
     private readonly ILogger<ExternalAPIController> _logger;
 
     public ExternalAPIController(ILogger<ExternalAPIController> logger)

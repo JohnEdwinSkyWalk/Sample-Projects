@@ -1,0 +1,24 @@
+<h1 id="tableLabel">All Mails</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!allmails"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="allmails">
+  <thead>
+    <tr>
+      <th>User Id</th>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let joed of allmails">
+      <td>{{ joed.userId }}</td>
+      <td>{{ joed.id }}</td>
+      <td>{{ joed.title }}</td>
+      <td>{{ joed.body }}</td>
+    </tr>
+  </tbody>
+</table>
